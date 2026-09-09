@@ -1,0 +1,13 @@
+# security headers — view-source is welcome, so is securityheaders.com
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; script-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'
+
+# fonts and images are immutable until renamed — let the edge cache them hard
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/*
+  Cache-Control: public, max-age=31536000, immutable
