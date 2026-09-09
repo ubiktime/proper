@@ -81,7 +81,7 @@ em { font-style: italic; }
 a { color: var(--accent); }
 
 /* ---------- hero ---------- */
-.hero { padding-block: clamp(4.5rem, 10vw, 7.5rem) clamp(3.5rem, 8vw, 6rem); }
+.hero { padding-block: clamp(3.375rem, 7.5vw, 5.625rem) clamp(3.5rem, 8vw, 6rem); }
 .tagline {
   font-family: var(--font-mono); font-size: .875rem; color: var(--accent);
   letter-spacing: .02em; margin-bottom: 2.25rem;
