@@ -141,7 +141,7 @@ td:last-child, th:last-child { padding-right: 0; }
 /* ---------- figures ---------- */
 figure.shot { margin-top: 2.5rem; }
 figure.shot img { display: block; max-width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 4px; background: var(--card); }
-#proof figure.shot img { max-width: 22rem; }
+#proof figure.shot img { max-width: min(22rem, 100%); }
 figure.shot figcaption { font-size: .875rem; color: var(--muted); font-style: italic; margin-top: .75rem; max-width: 44ch; }
 
 /* ---------- footer ---------- */
@@ -183,6 +183,6 @@ html.blueprint [data-bp]::before {
   .steps li { grid-template-columns: 3rem 1fr; }
   /* fixed corner toggle would sit on top of the hero CTA on phones —
      on small screens it becomes a footer toy instead */
-  .bp-toggle { position: static; display: inline-block; margin: 0 var(--gutter) 2rem; }
+  .bp-toggle { position: static; display: inline-block; margin: 0 var(--gutter) 3.25rem; }
   html.blueprint .bp-toggle[data-bp] { position: static; }
 }
