@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://proper-pages.pages.dev/</loc></url>
-  <url><loc>https://proper-pages.pages.dev/case-study</loc></url>
+  <url>
+    <loc>https://properpages.co.uk/</loc>
+  </url>
+  <url>
+    <loc>https://properpages.co.uk/case-study</loc>
+  </url>
 </urlset>
