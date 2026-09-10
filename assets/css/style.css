@@ -186,3 +186,7 @@ html.blueprint [data-bp]::before {
   .bp-toggle { position: static; display: inline-block; margin: 0 var(--gutter) 3.25rem; }
   html.blueprint .bp-toggle[data-bp] { position: static; }
 }
+@view-transition { navigation: auto; }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+}
