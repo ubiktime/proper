@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://proper-pages.pages.dev/sitemap.xml
+Sitemap: https://properpages.co.uk/sitemap.xml
