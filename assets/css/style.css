@@ -138,6 +138,46 @@ td:last-child, th:last-child { padding-right: 0; }
 .package p { color: var(--muted); font-size: 1.0625rem; }
 .terms { font-size: .9375rem; color: var(--muted); margin-top: 1.5rem; font-style: italic; }
 
+/* ---------- FAQ ---------- */
+#faq details {
+  border-top: 1px solid var(--rule);
+  padding-block: 1.5rem;
+}
+#faq summary {
+  font-family: var(--font-head);
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--h);
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 2.5rem;
+}
+#faq summary::-webkit-details-marker {
+  display: none;
+}
+#faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--accent);
+  transition: transform 0.2s ease;
+}
+#faq details[open] summary::after {
+  content: "−";
+}
+#faq details p {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 1.0625rem;
+  max-width: 56ch;
+}
+
 /* ---------- figures ---------- */
 figure.shot { margin-top: 2.5rem; }
 figure.shot img { display: block; max-width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 4px; background: var(--card); }
