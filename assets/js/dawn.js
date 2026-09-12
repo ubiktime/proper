@@ -48,7 +48,7 @@
 
   /* the flip follows the content: #ownership is where the lights come on */
   function computeCross() {
-    var el = document.getElementById('ownership');
+    var el = document.querySelector('[data-dawn-anchor]') || document.getElementById('ownership');
     if (!el) return;
     var max = document.documentElement.scrollHeight - innerHeight;
     if (max <= 0) return;
