@@ -4,9 +4,11 @@
 
 ## Services
 
+- [The Brochure Build](https://properpages.co.uk/#brochure-build): From £1,400, typically one week. One page that turns visitors into enquiries, for tradespeople, coaches, therapists, consultants, and venues. Copy written, legal pages included. Bolt-ons: Calendly, Mailchimp signup, Stripe payment link, Instagram feed.
 - [The Authority Build](https://properpages.co.uk/#authority-build): From £2,800. One conversation, copy written for you, design, code, launch.
 - [The Platform Escape](https://properpages.co.uk/#platform-escape): From £3,500. Everything above plus zero-downtime migration from Wix, WordPress, or Squarespace.
 - [The Executive Teardown](https://properpages.co.uk/#executive-teardown): £500. Five-page audit of your current site, credited if you hire.
+- [The Brochure Care Plan](https://properpages.co.uk/#brochure-care): £50/month. Hosting, monitoring, changes within 48 hours, quarterly check that the live site matches what shipped, ask-me-anything support included.
 - [The Authority Retainer](https://properpages.co.uk/#authority-retainer): £200/month. Hosting, monitoring, updates, quarterly GEO review.
 
 ## Proof
