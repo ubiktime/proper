@@ -35,16 +35,17 @@
   /* stops rebuilt around the live crossover */
   function bgStops() {
     return [
-      [0, '#101F33'], [CROSS * 0.566, '#183048'], [CROSS * 0.885, '#2C4A6B'],
-      [CROSS, '#5F7492'],
-      [CROSS + 0.172 * (1 - CROSS), '#9DA8B2'],
-      [CROSS + 0.540 * (1 - CROSS), '#CFCFBE'],
-      [CROSS + 0.770 * (1 - CROSS), '#E6E3CE'],
+      [0, '#101F33'], [CROSS * 0.55, '#183048'], [CROSS - 0.07, '#223D5B'],
+      [CROSS - 0.025, '#46587A'],
+      [CROSS, '#7C8A9C'],
+      [CROSS + 0.025, '#AEB4B2'],
+      [CROSS + 0.07, '#DCD9C6'],
       [1, '#F1EFDC']
     ];
   }
   function inkStops()   { return [[CROSS, '#121512'], [CROSS + 0.540 * (1 - CROSS), '#203020'], [1, '#203020']]; }
   function mutedStops() { return [[CROSS, '#4F5B47'], [CROSS + 0.770 * (1 - CROSS), '#5A6349'], [1, '#5A6349']]; }
+  function accentStops() { return [[CROSS, '#4F430A'], [CROSS + 0.25 * (1 - CROSS), '#9A8616'], [1, '#9A8616']]; }
 
   /* the flip follows the content: #ownership is where the lights come on */
   function computeCross() {
@@ -87,7 +88,7 @@
     r.setProperty('--h', side === 'light' ? S.h : sample(inkStops(), p));
     r.setProperty('--text', side === 'light' ? S.text : sample(inkStops(), p));
     r.setProperty('--muted', side === 'light' ? S.muted : sample(mutedStops(), p));
-    r.setProperty('--accent', S.accent);
+    r.setProperty('--accent', side === 'light' ? S.accent : sample(accentStops(), p));
     r.setProperty('--accent-ink', S.aink);
     r.setProperty('--rule', S.rule);
     r.setProperty('--card', S.card);
