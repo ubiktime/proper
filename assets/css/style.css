@@ -215,6 +215,8 @@ html.blueprint [data-bp]::before {
 
 /* ---------- helpers ---------- */
 .mt-0 { margin-top: 0; }
+.mt-md { margin-top: 1.25rem; }
+.mt-lg { margin-top: 2.5rem; }
 .center { text-align: center; }
 .nobr { white-space: nowrap; }
 
