@@ -178,6 +178,14 @@ td:last-child, th:last-child { padding-right: 0; }
   max-width: 56ch;
 }
 
+/* ---------- read-more (about section) ---------- */
+.read-more { margin-top: 1em; }
+.read-more summary { font-family: var(--font-head); font-weight: 500; font-size: 1.0625rem; color: var(--accent); cursor: pointer; list-style: none; }
+.read-more summary::-webkit-details-marker { display: none; }
+.read-more summary::after { content: " +"; }
+.read-more[open] summary::after { content: " −"; }
+.read-more p { margin-top: .75rem; }
+
 /* ---------- figures ---------- */
 figure.shot { margin-top: 2.5rem; }
 figure.shot img { display: block; max-width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 4px; background: var(--card); }
